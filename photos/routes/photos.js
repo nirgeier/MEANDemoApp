@@ -1,20 +1,12 @@
-//
-// This is our photos static data
-//
+/**
+ * This file will contain the data for our photos application
+ **/
 
-// Init the photos array
-var photos = [];
-
-// Add images to the array.
-// Each photo has its name and path (it can be local images or url from the internet)
-photos.push({
-    name: 'Event Loop (png)',
-    path: 'eventLoop.png'
-});
-photos.push({
-    name: 'Express (jpg)',
-    path: 'express.jpg'
-});
+// Photo upload dependencies
+var Photos = require('../models/Photos');
+var path = require('path');
+var fs = require('fs');
+var join = path.join;
 
 /**
  * This method will render out the images
@@ -22,12 +14,22 @@ photos.push({
  * @param req - The request object
  * @param res - The response object
  */
-exports.list = function(req, res) {
+exports.list = function(req, res, next) {
+    // Use the mongoose to find all the images in the models
+    Photos.find(
+        {}, // Find all images
+        function(err, photos) {
 
-    // Render the views/photos page
-    res.render('photos', {
-            title: 'Photos',
-            photos: photos
-        }
-    )
+            // Check for error
+            if (err) {
+                return next(err);
+            }
+
+            // Render the images gallery
+            res.render('photos', {
+                title: 'Photos',
+                photos: photos
+            });
+        });
 };
+
