@@ -53,3 +53,35 @@ Express Photo Application
 
 Open Browser in http://127.0.0.1:3000
 You should now see the Welcome page
+
+----------------------------------------------------------------------------
+###Step 02 - Add photos (route + view)
+----------------------------------------------------------------------------
+
+1. Edit routes/photos.js and add a list function to list (display) the images
+2. Create new file views/photos.ejs which will be served as our HTML page to display the images
+3. Edit app.js and add the photos as required module
+4. Edit app.js and set the photos list as our default view
+5. restart the node server and reload the page
+
+----------------------------------------------------------------------------
+###Step 03 - Adding mongod
+----------------------------------------------------------------------------
+
+##### Install **multer** for express v4.X
+
+    npm install --save multer
+
+- Create file models/Photo.js with the photos model
+- Update the `exports.list` to fetch the images from the mongod db  
+
+----------------------------------------------------------------------------
+###Step 04 - Adding the upload form
+----------------------------------------------------------------------------
+
+- Create file models/Photo.js
+- Creating a photo upload form (views/photos/upload.ejs)
+- Add the new routes to app.js
+- Add the upload form (views/photos/upload.ejs)
+- Adding photo submit route definition
+- Add photo upload destination settings (app.js)

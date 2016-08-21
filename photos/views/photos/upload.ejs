@@ -1,0 +1,33 @@
+<% include ../templates/head %>
+
+<div class="panel panel-primary upload-form">
+    <div class="panel-heading">
+        <h3 class="panel-title"><%= title %></h3>
+    </div>
+    <div class="panel-body">
+        <form method="post" enctype="multipart/form-data" class="upload-form" action="/upload">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Image name</h3>
+                </div>
+                <div class="panel-body">
+                    <input type="text" name="name" placeholder="name">
+                </div>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Choose image to load</h3>
+                </div>
+                <div class="panel-body">
+                    <input type="file" name="photo">
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Upload image</button>
+        </form>
+    </div>
+
+</div>
+<% include ../templates/footer %>

@@ -20,3 +20,7 @@ a {
 .upload-form {
     max-width: 400px;
 }
+
+.nav>li{
+    display: inline-block;
+}

@@ -32,8 +32,13 @@ app.use(multer({dest: './uploads/'}).single('photo'));
 //
 app.get('/', photos.list);
 
-app.use(express.static(path.join(__dirname, 'public')));
+//
+// Set the upload image support
+//
+app.get('/upload', photos.form);
+app.post('/upload', photos.submit(app.get('photos')));
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
