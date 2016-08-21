@@ -93,3 +93,7 @@ You should now see the Welcome page
 - Update the models/Photo.js with the download method
 - Add the new routes to app.js
 - Update the view to support the download method 
+
+----------------------------------------------------------------------------
+###Step 06 - Adding live reload
+----------------------------------------------------------------------------

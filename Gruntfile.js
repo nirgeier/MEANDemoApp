@@ -15,24 +15,21 @@ module.exports = function (grunt) {
             },
             src: [
                 'Gruntfile.js',
-                'spec/*.js',
+                'app.js',
                 '/photos/**/*.js'
             ]
-        },
-        jasmine_node: {
-            options: {
-                forceExit: false
-            },
-            spec: ['*.js']
         },
 
         // This task watch for file changes and executing the given tasks
         watch: {
+            options: {
+                livereload: true
+            },
             scripts: {
                 files: [
                     'Gruntfile.js',
-                    'spec/**/*.js',
-                    '/photos/**/*.js',
+                    'app.js',
+                    '/photos/**/**',
                     '!/photos/data/**'
                 ],
                 tasks: ['default'],
@@ -43,9 +40,7 @@ module.exports = function (grunt) {
         }
     });
 
-
     // Register the grunt tasks
-    grunt.registerTask('default', 'compile');
-    grunt.registerTask('compile', ['jshint']);
+    grunt.registerTask('default', ['compile', 'jshint']);
 
 };
