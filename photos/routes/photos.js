@@ -96,3 +96,29 @@ exports.submit = function(dir) {
 
 };
 
+/**
+ *
+ * @param dir
+ * @returns {Function}
+ */
+exports.download = function(dir) {
+
+    return function(req, res, next) {
+
+        // Get the image id
+        var id = req.params.id;
+
+        // find the image in the DB
+        Photos.findById(id,
+            function(err, photo) {
+                if (err) {
+                    return next(err);
+                }
+                // get the image path
+                var path = join(dir, photo.path);
+
+                // Download the image name
+                res.download(path, photo.name + '.jpeg');
+            });
+    };
+};

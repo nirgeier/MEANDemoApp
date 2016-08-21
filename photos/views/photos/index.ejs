@@ -12,7 +12,9 @@
                     <h3 class="panel-title"><%= photo.name %></h3>
                 </div>
                 <div class="panel-body">
-                    <img src="/images/<%= photo.path %>" class="photo">
+                    <a href='/photo/<%=photo.id%>/download'>
+                        <img src="/images/<%= photo.path %>" class="photo">
+                    </a>
                 </div>
             </div>
         </div>

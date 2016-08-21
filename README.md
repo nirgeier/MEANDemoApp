@@ -85,3 +85,11 @@ You should now see the Welcome page
 - Add the upload form (views/photos/upload.ejs)
 - Adding photo submit route definition
 - Add photo upload destination settings (app.js)
+
+----------------------------------------------------------------------------
+###Step 05 - Adding the download option
+----------------------------------------------------------------------------
+
+- Update the models/Photo.js with the download method
+- Add the new routes to app.js
+- Update the view to support the download method 
