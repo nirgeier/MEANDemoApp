@@ -1,0 +1,34 @@
+{
+  "name": "photosapp",
+  "version": "1.0.0",
+  "description": "Express Photo Application",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirgeier/MEANPhotosApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nirgeier/MEANPhotosApp/issues"
+  },
+  "homepage": "https://github.com/nirgeier/MEANPhotosApp#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "ejs": "^2.5.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jasmine": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-exec": "^0.4.6",
+    "grunt-jasmine-node": "^0.3.1",
+    "jasmine-node": "^1.14.5",
+    "jasmine-reporters": "^2.1.1",
+    "load-grunt-tasks": "^3.4.0",
+    "mongodb": "^2.2.7",
+    "mongoose": "^4.5.9"
+  }
+}
