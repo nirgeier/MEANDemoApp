@@ -27,6 +27,4 @@ build/Release
 node_modules
 
 .idea/
-photos/data
-!photos/data/.gitignore
 
