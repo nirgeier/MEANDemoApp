@@ -20,7 +20,7 @@ Express Photo Application
     npm install -g express-generator
     npm install -g nodemon
     
-#####Create the project skeleton
+##### Create the project skeleton
  
     // Add the -e flag to use the EJS template engine
     express -e photos
