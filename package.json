@@ -4,7 +4,7 @@
   "description": "Express Photo Application",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "./node_modules/.bin/jasmine-node spec"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
