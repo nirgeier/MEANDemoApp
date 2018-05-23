@@ -2,7 +2,7 @@ Express Photo Application
 =========================
 
 ----------------------------------------------------------------------------
-##Step 01 - Create application skelton
+## Step 01 - Create application skelton
 ----------------------------------------------------------------------------
 
 ##### Pre requirements
@@ -55,7 +55,7 @@ Open Browser in http://127.0.0.1:3000
 You should now see the Welcome page
 
 ----------------------------------------------------------------------------
-###Step 02 - Add photos (route + view)
+### Step 02 - Add photos (route + view)
 ----------------------------------------------------------------------------
 
 1. Create routes/photos.js and add a list function to list (display) the images
@@ -65,7 +65,7 @@ You should now see the Welcome page
 5. restart the node server and reload the page
 
 ----------------------------------------------------------------------------
-###Step 03 - Adding mongod
+### Step 03 - Adding mongod
 ----------------------------------------------------------------------------
 
 ##### Install **multer** for express v4.X
@@ -76,7 +76,7 @@ You should now see the Welcome page
 - Update the `exports.list` to fetch the images from the mongod db  
 
 ----------------------------------------------------------------------------
-###Step 04 - Adding the upload form
+### Step 04 - Adding the upload form
 ----------------------------------------------------------------------------
 
 - Create file models/Photo.js
@@ -87,7 +87,7 @@ You should now see the Welcome page
 - Add photo upload destination settings (app.js)
 
 ----------------------------------------------------------------------------
-###Step 05 - Adding the download option
+### Step 05 - Adding the download option
 ----------------------------------------------------------------------------
 
 - Update the models/Photo.js with the download method
@@ -95,5 +95,5 @@ You should now see the Welcome page
 - Update the view to support the download method 
 
 ----------------------------------------------------------------------------
-###Step 06 - Adding live reload
+### Step 06 - Adding live reload
 ----------------------------------------------------------------------------
