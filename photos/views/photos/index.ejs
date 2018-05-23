@@ -1,0 +1,24 @@
+<% include ../templates/head %>
+
+<h1>Photos</h1>
+<p>Photo application</p>
+
+<div id="photos">
+    <div class="row">
+        <% photos.forEach(function(photo){ %>
+        <div class="col-md-4 col-sm-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><%= photo.name %></h3>
+                </div>
+                <div class="panel-body">
+                    <img src="/images/<%= photo.path %>" class="photo">
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+
+</div>
+
+<% include ../templates/footer %>
