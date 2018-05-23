@@ -41,7 +41,7 @@ Express Photo Application
  2. Follow the instructions and add the git remote to this local repository
  3. Create the .gitignore file to ignore all the ___node_modules___
 
-#####Installing MongoDB
+##### Installing MongoDB
  Download mongoDB and copy the files in the bin folder within
  to wherever you want Mongo to live, and you're done. You've installed Mongo
 
@@ -58,7 +58,7 @@ You should now see the Welcome page
 ###Step 02 - Add photos (route + view)
 ----------------------------------------------------------------------------
 
-1. Edit routes/photos.js and add a list function to list (display) the images
+1. Create routes/photos.js and add a list function to list (display) the images
 2. Create new file views/photos.ejs which will be served as our HTML page to display the images
 3. Edit app.js and add the photos as required module
 4. Edit app.js and set the photos list as our default view
